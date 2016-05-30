@@ -1,0 +1,30 @@
+.one {
+	color: purple;
+	font-size: 85px; 
+	text-align: center;
+	padding-top: 180px; 
+}
+
+.sub {
+	font-size: 24px; 
+	text-align: center; 
+	padding-top: 10px;
+	color: gray; 
+}
+
+.downloads {
+	text-align: center; 
+}
+
+.underline {
+	text-decoration: underline; 
+	color: green; 
+}
+
+.animate_it {
+	padding-top: 20px; 
+}
+
+.animate {
+	border: solid, pink, 1px; 
+}
