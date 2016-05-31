@@ -25,6 +25,16 @@
 	padding-top: 20px; 
 }
 
-.animate {
-	border: solid, pink, 1px; 
+.onebutton {
+	border: #e60073, solid, 1px; 
+	border-color: #e60073;
+	color: #e60073;
 }
+
+/*.inputarrow {
+	background-image: url("all_images/ddown.svg"), none;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1rem;
+    background-position: right center;
+} THIS URL IS NOT WORKING - SEE FILE PATH AT ERROR MESSAGE WHEN NOT LOADING @ INSPECT*/
+
