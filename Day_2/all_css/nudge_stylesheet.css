@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+
+.top {
+	max-height: 50px; 
+	max-width: 100%; 
+}
+
+.logo {
+	font-family: "Lobster", cursive;
+	font-size: 30px; 
+	padding-left: 45px; 
+	padding-top: 30px; 
+}
+
+.nav {
+	padding-top: 50px; 
+	text-align: center; 
+}
+
+.img {
+	max-height: 55px; 
+	max-width: 55px; 
+	padding-top: 40px; 
+	align-items: right; 
+}
+
+.mediapics {
+	padding-right: 30px; 
+	padding-top: 5px; 
+}
+
+.word {
+	padding-left: 10px; 
+	padding-right: 10px; 
+}
+
+.land {
+	font-family: "Times New Roman"; 
+	font-size: 30px; 
+	text-align: center; 
+	padding-top: 30px; 
+	padding-bottom: 30px; 
+}
+
+.nudge1 {
+	padding-top: 10px; 
+	padding-bottom: 20px; 
+}
+
+.nudge2 {
+	padding-bottom: 20px; 
+}
+
+.nudge3 {
+	padding-bottom: 60px; 
+}
+
+.foot {
+	text-align: center; 
+	font-size: 12px; 
+	padding-bottom: 30px; 
+}

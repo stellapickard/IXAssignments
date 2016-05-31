@@ -12,12 +12,8 @@ body {
 	height: 50px;
 }
 
-.belancio {
-
-}
-
-.nav {
-
+.toprows {
+	background-color: #443B36;
 }
 
 .aff {
@@ -70,18 +66,43 @@ button {
 }
 
 .subfooter {
-	color: black; 
-	font-size: 12px; 
+	font-size: 14px; 
 	padding-top: 15px; 
 	padding-bottom: 15px; 
-	background-color: gray;
+	background-color: #e6e6e6;
+	color: 	 #666666;
 }
 
-.belancio {
-	padding-left: 20px;  
+.belancio { 
+	padding-top: 5px; 
+	padding-left: 25px; 
 }
 
-.word {
-	padding-left: 5px; 
-	padding-right: 5px; 
+.footer {
+	height: 50px; 
+	color: black;
+	font-size: 10px; 
+	padding-top: 7px; 
+
 }
+
+.love {
+	padding-left: 25px; 
+}
+.heart {
+	color: red; 
+}
+
+.copyright {
+	text-align: right; 
+	padding-right: 20px; 
+}
+
+
+
+
+
+
+
+
+
