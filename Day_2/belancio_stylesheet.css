@@ -1,0 +1,87 @@
+body {
+	font-family: Helvetica; 
+	color: #fff; 
+	font-size: 18px; 
+	margin: 0;
+	padding: 0px; 
+}
+
+.header {
+	padding-top: 15px;
+	background-color: #443B36;
+	height: 50px;
+}
+
+.belancio {
+
+}
+
+.nav {
+
+}
+
+.aff {
+	text-align: center; 
+	color: white; 
+	padding: 7px; 
+	background-color: #443B36;
+	margin-bottom: 0px; 
+}
+
+.clients {
+	color: black;
+	font-size: 30px; 
+	background-color: white; 
+	padding-top: 20px; 
+	padding-left: 75px; 
+	padding-bottom: 20px; 
+
+}
+
+.brands {
+	background-color: #fff; 
+	height: 140px;
+
+}
+
+.text {
+	max-height: 200px; 
+	padding-top: 60px; 
+	padding-bottom: 50px; 
+	text-align: center; 
+	background-color: turquoise;
+}
+
+.onebutton {
+	background-color: turquoise;
+	border: solid, white, 4px; 
+	color: white; 
+	border-radius: 0px; 
+	float: left; 
+}
+
+button {
+	padding-right: 50px; 
+}
+
+.sentence {
+	float: left;
+	
+}
+
+.subfooter {
+	color: black; 
+	font-size: 12px; 
+	padding-top: 15px; 
+	padding-bottom: 15px; 
+	background-color: gray;
+}
+
+.belancio {
+	padding-left: 20px;  
+}
+
+.word {
+	padding-left: 5px; 
+	padding-right: 5px; 
+}
