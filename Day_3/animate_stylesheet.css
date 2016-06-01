@@ -1,0 +1,44 @@
+.one {
+	color: purple;
+	font-size: 85px; 
+	text-align: center;
+	padding-top: 180px; 
+}
+
+.sub {
+	font-size: 24px; 
+	text-align: center; 
+	padding-top: 10px;
+	color: gray; 
+}
+
+.downloads {
+	text-align: center; 
+}
+
+.underline {
+	text-decoration: underline; 
+	color: green; 
+}
+
+.animate_it {
+	padding-top: 20px; 
+}
+
+.onebutton {
+	border: #e60073, solid, 1px; 
+	border-color: #e60073;
+	color: #e60073;
+}
+
+.bounce {
+	padding: 12px
+}
+
+/*.inputarrow {
+	background-image: url("all_images/ddown.svg"), none;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1rem;
+    background-position: right center;
+} THIS URL IS NOT WORKING - SEE FILE PATH AT ERROR MESSAGE WHEN NOT LOADING @ INSPECT*/
+
