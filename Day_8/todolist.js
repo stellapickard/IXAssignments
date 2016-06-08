@@ -10,6 +10,7 @@ $(document).ready(function(){
 		if(code===13){
 			addToList($("#todo-input").val());
 			$("#todo-input").val("");
+
 		}
 	});
 });
@@ -19,3 +20,12 @@ function addToList(value) {
 	var liElem = $("<li></li>").html(value);
 	$("#list").append(liElem);
 };
+
+
+
+
+// function removeFromList(value) {
+	
+
+// 	}
+
