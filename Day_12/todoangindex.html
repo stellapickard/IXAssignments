@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do list</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel=stylesheet href="./todoangstylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> 
+	<script src="./todoangscript.js"> </script>
+</head>
+
+
+<body ng-app = "toDoApp" ng-controller="mainCtrl">
+	<div class="container"> 
+		<div class ="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="wrapper"> 
+					<h1> To do list: </h1>
+					<form ng-submit="addItems()">
+						<input class="form-control" id="todo-input" ng-model="newItem"> 
+						<button ng-click="addItem()"> Add to list </button>
+					</form>
+					<ol id="list">
+						<li ng-repeat="item in items track by $index" ng-click="remove(item)" > {{item}} </li>
+					</ol>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>
+
