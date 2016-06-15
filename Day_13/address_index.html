@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Address | Angular</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script> 
+	<script src="./formval_script.js"> </script>
+</head>
+
+
+<body ng-app = "addressBookApp">
+	<div ng-controller="addressCtrl">
+		<div ng-hide="new">
+			<div ng-show="submitItems">
+				<div class="container"> 
+					<div class ="row">
+						<div class="col-md-6 col-md-offset-3">
+							<div class="wrapper"> 
+								<h1> Address Book </h1>
+								<h5 ng-hide="submitItem()"> Please enter your name and phone number (XXX-XXX-XXXX) </h5>
+								<h5 ng-show="submitItem()"> You have successfully added a contact </h5>
+								<form>
+									<p> Name: </p>
+									<input class="form-control" id="name-input" ng-model="newName">
+									<p> Number: </p> 
+									<input class="form-control" id="num-input" ng-model="newNumber"> 
+									<br>
+									<button ng-click="submitItems()"> Add to list </button>
+								</form>
+								<br>
+								<ol id="list">
+									<li ng-repeat="name in person track by $index" ng-click="remove(person)"> {{name}} </li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+<div >
+	<div ng-show="submit">

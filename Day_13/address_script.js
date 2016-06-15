@@ -1,6 +1,6 @@
 var app = angular.module("addressBookApp",[]);
 
-app.controller("mainCtrl", function($scope){
+app.controller("addressCtrl", function($scope){
 	$scope.newName=" ";
 	$scope.newNumber=" ";
 	$scope.person=[];
@@ -17,7 +17,7 @@ $scope.submitItems = function(){
 
 // Phone number validation
 
-var numsplit = $scope.newNumber.split("-")
+var numsplit = $scope.newNumber.split("-");
 	if (numsplit.length !== 3){
 		alert("Is the number you entered correct?");
 	};
@@ -40,6 +40,8 @@ var numsplit = $scope.newNumber.split("-")
 
 	$scope.person.push($scope.newName + $scope.newNumber);
 	// console.log($scope.person);    
+	$scope.submit = false; 
+	$scope.next = "Welcome Stella"
 
 // }
 };

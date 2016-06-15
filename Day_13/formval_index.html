@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up | Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+  <script src="./formval_script.js"</script>
+</head>
+<body ng-app="RouterApp">
+  <div ng-controller="FormCtrl">
+    <div ng-model="next" ng-hide="new"> {{next}} </div>
+    <div ng-show="checkInputs">
+      <div class="container" ng-model="success" ng-hide="successful">
+        <form>
+
+          <p class="inputheader">Name:</p>
+          <input type="text" ng-model="name"> 
+          <p> {{yourName}} </p>
+
+          <p class="inputheader">Phone Number:</p>
+          <input type="text" ng-model="phone">
+          <p> {{phoneNo}} </p>
+
+          <p class="inputheader">Email:</p>
+          <input type="text" ng-model="mail">
+          <p> {{email}} </p>
+
+
+          <p class="inputheader">Password:</p>
+          <input type="text" ng-model="passw">
+          <p> {{password}} </p>
+
+          <p class="inputheader">Repeat Password:</p>
+          <input type="text" ng-model="rpassw">
+          <p> {{repeatPassword}} </p>
+
+        </form>
+        <button ng-click="checkInputs()">Submit</button>
+        <p> {{success}} </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
