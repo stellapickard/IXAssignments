@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+body {
+	background-image: url('chommies.jpg');
+	background-size: 100%; 
+	background-repeat: none;
+	background-position: center center;
+	background-attachment: fixed
+}
+
+textarea {
+	width: 100%; 
+	max-height: 65px;
+}
+
+select {
+	width: 130px;
+}
+
+p > a {
+	color: #4d0066;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.heading {
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px gray;
+}
+.button {
+	padding: 5px; 
+	border-radius: 2px;
+}
+
+.comment {
+	border: 1px solid #e6e6ff;
+	padding: 20px; 
+	border-radius: 3px;
+	background-color: #eff5f5;
+	opacity: 0.7;
+}
+
+.person {
+	color:  #4d0066;
+	font-weight: bold;
+}
+
+.positivity {
+	font-size: 10px;
+}
+
+.compliment {
+	font-family: Shadows Into Light;
+	font-size: 19px;
+}

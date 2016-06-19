@@ -1,0 +1,57 @@
+<div  ng-controller='feedCtrl'>
+	<h2 class="heading">i_XChommies</h2>
+	<h4 class="heading"> Give a classmate a compliment here </h4>
+	<br>
+	<div>
+		<textarea ng-model="newProp.compliment"></textarea> 
+		<br>
+		<select ng-model="newProp.receiver" ng-options="bru.first_name for bru in brus">
+		</select>
+		<br>
+	</div>
+	
+	<br><br>
+	<div class="buttons">
+		<button class="button" ng-click="sendPost()">Post</button>
+		<button class="button" ng-click="loadData()">Refresh Feed</button>
+		<br><br>
+		<p> <a href="#/personal"> view your compliments here </a></p>
+	</div>
+	<br>
+	<div class="comment">
+		<div ng-repeat="prop in props">
+			<div class="person"> @{{prop.receiver.first_name}} </div>
+			<div class="compliment"> {{prop.text}} </div>
+			<div class="positivity"> POSITIVITY: {{prop.positivity_score}} </div>
+			<br>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- <div ng-controller="FeedCtrl">
+ <h2 id="prop_heading">The Props Feed</h2>
+ <a href="#/me">View my props</a>
+ <textarea class="form-control" placeholder="Type something positive here :)" ng-model="newProp.text"></textarea>
+ <p class = "alert alert-danger ng-binding" ng-show="errorMessage">Positive props only!!</p>
+ <div class="row">
+   <div class="col-md-4">
+     <select ng-model="newProp.receiver" ng-options="bru as bru.first_name for bru in brus" class="form-control"></select>
+   </div>
+   <div class="col-md-4">
+     <div class="btn btn-info" ng-click="addProp()">Validate and send!</div>
+     <button ng-click="loadData()">Refresh</button>
+   </div>
+ </div>
+
+ <div class="props-feed">
+   <div class="prop" ng-repeat="prop in props">
+     <p>{{prop.text}}</p>
+     <div>
+       <small>Positivity: {{prop.positivity_score}}</small>
+     </div>
+     <small>@{{prop.receiver.first_name}}</small>
+   </div>
+ </div>
+</div> -->
