@@ -71,22 +71,22 @@ app.controller("feedCtrl", function($scope, $http){
 
 // ME CONTROL 
 
-// app.controller("meCtrl", function($scope, $http){
-// 	$http({
-// 		method: "GET",
-// 		url: "http://ixchommies.herokuapp.com/props/me",
-// 		params: { 
-// 			token: "7bbce67a94adb97f8b1c46fd108e7a40"}, 
+app.controller("meCtrl", function($scope, $http){
+	$http({
+		method: "GET",
+		url: "http://ixchommies.herokuapp.com/props/me",
+		params: { 
+			token: "7bbce67a94adb97f8b1c46fd108e7a40"}, 
 
-// 		}).then(function(response){
-// 			$scope.props = response.data;
-// 			console.log(response.data[0].receiver.id);
-// 			console.log("yo"); 
-// 		});
+		}).then(function(response){
+			$scope.props = response.data;
+			// console.log(response.data[0].receiver.id);
+			console.log("yo"); 
+		});
 	
 
 	
-// }); 
+}); 
 
 
 
