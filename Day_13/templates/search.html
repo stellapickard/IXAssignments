@@ -1,0 +1,11 @@
+<div ng-controller="SearchCtrl">
+  <h2>Search the NYT</h2>
+  <p> <a href="/"> View top stories here </a></p>
+  <input type="text" class="form-control" ng-model="searchTerm">
+  <div class="btn btn-info" ng-click="search()">Search</div>
+  <div class="articles">
+  	<ol >
+  	<li ng-repeat="story in articles track by $index"> {{story.headline.main}} </li>
+  	</ol>
+  </div>
+</div>
